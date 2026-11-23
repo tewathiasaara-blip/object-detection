@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights (downloaded automatically on first run)
+*.pt
+
+# Generated outputs (keep the repo light; they are produced by running the code)
+results/images/*
+results/videos/*
+experiments/derived/*
+graphs/*.png
+reports/*.csv
+experiments/*.csv
+
+# Keep the folders themselves
+!results/images/.gitkeep
+!results/videos/.gitkeep
+
+# macOS
+.DS_Store

@@ -1,0 +1,15 @@
+DATASET / INPUT SOURCES LOG
+===========================
+Record the origin and permitted usage of EVERY image and video you test, so the
+project is traceable and academically honest. Fill one block per file.
+
+Example:
+-------------------------------------------------------------------
+File:        input_images/street.jpg
+Source:      Personally captured with my phone on 2026-11-23
+Licence:     My own photo (I grant use for this academic project)
+Condition:   Normal lighting, multiple objects (people, cars)
+Notes:       Used as the baseline image for experiments
+-------------------------------------------------------------------
+
+(Add your real entries below.)
