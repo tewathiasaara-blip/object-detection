@@ -1,12 +1,22 @@
-# Exact versions verified working on MacBook Air M1 (Apple Silicon), Python 3.13.5.
-# These were the versions actually installed and tested for this project.
-# Reproduce with:  python3.13 -m venv .venv && source .venv/bin/activate
-#                  pip install -r requirements.txt
+# Dependencies for this project.
+# Verified working on MacBook Air M1 (Python 3.13.5) AND on Streamlit Cloud (Linux, CPU).
+#
+# Notes for deployment:
+#  - opencv-python-headless is used (no GUI libs) so it works on headless servers.
+#    The code never calls cv2.imshow, so this is also fine locally.
+#  - The --extra-index-url line pulls a CPU-only build of PyTorch on Linux, which
+#    is small. On a Mac this line is harmless (the macOS wheel still comes from PyPI).
+#
+# Reproduce locally:
+#   python3.13 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+--extra-index-url https://download.pytorch.org/whl/cpu
 
 ultralytics==8.4.216
 torch==2.15.0
 torchvision==0.29.2
-opencv-python==5.1.0.95
+opencv-python-headless==5.1.0.95
 numpy==2.5.5
 pandas==3.1.1
 matplotlib==3.11.2
